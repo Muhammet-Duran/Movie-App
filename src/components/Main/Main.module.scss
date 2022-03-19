@@ -1,0 +1,30 @@
+@import "./../../styles/variables.scss";
+
+.main__area {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 40px 0px;
+
+  
+  
+  // @media screen and (max-width:991px){
+  //   .film-area{
+  //       grid-template-columns:repeat(2,1fr);
+      
+  //   }
+  // }
+  // @media screen and (max-width:480px){
+  //   .film-area{
+  //       grid-template-columns:1fr;
+      
+  //   }
+  // }
+  // text-align: center;
+  // background-color: red;
+
+  // display: grid;
+  // grid-template-columns: repeat(3, 1fr);
+  // grid-template-rows: auto;
+  // gap: 16px;
+  // place-items: center;
+}

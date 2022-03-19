@@ -1,0 +1,108 @@
+@import "./../../styles/variables.scss";
+.movie {
+    display: flex;
+    flex-direction: column;
+    background-color: $greyColor;
+    text-align: center;
+    max-width: 312px;
+    height: 568px;
+    border-radius: $borderRadius;
+    overflow: hidden;
+    box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.1);
+    &__img_area {
+      position: relative;
+      overflow: hidden;
+      img {
+        object-fit: cover;
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+      &_desc {
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        line-height: 20px;
+        padding: 18px 10px;
+        background: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        max-height: min-content;
+        overflow-y: auto;
+        overflow-x: hidden;
+        border-radius: $borderRadius $borderRadius 0 0;
+        box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.1);
+        transform: translateY(120%);
+        transition: transform 0.3s ease-in-out;
+      }
+    }
+    &:hover {
+      .movie__img_area_desc {
+        transform: translateY(0);
+      }
+    }
+    &__title {
+      padding: 8px 6px 2px;
+      color: $color;
+      border-radius: 3px;
+      letter-spacing: 1px;
+      font-size: 19px;
+      font-weight: 700;
+    }
+    &__info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 10px;
+      &__svg{
+        fill: goldenrod;
+        &.active {
+          fill: red;
+        }
+      }
+      // svg.active{
+      //   fill: red;
+      // }
+      &__date,
+      &__rating {
+        font-size: 14px;
+        color: $color;
+        font-weight: 600;
+        border-radius: 3px;
+        padding: 6px 8px;
+      }
+      &__rating {
+        position: relative;
+        display: flex;
+  
+        span {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+        .round {
+          transform: rotate(-90deg);
+          transition: all 1s ease-in-out;
+          /* SVG */
+          fill: none;
+          stroke-width: 4;
+          stroke-linecap: round;
+  
+          &.green {
+            stroke: green;
+          }
+          &.orange {
+            stroke: rgb(150, 100, 8);
+          }
+          &.red {
+            stroke: red;
+          }
+          &.transparent{
+            stroke: transparent;
+          }
+        }
+      }
+    }
+  }

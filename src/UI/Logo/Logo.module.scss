@@ -1,0 +1,25 @@
+@import "./../../styles/variables.scss";
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: $color;
+  cursor: pointer;
+
+  &__icon {
+    transform: rotate(-30deg);
+    display: inline-block;
+  }
+  &__text {
+    font-size: 28px;
+    color: $white;
+    letter-spacing: 3px;
+    margin-left: 8px;
+    transition: all 0.3s linear;
+  }
+  &:hover {
+    .logo__text {
+      color: $color;
+    }
+  }
+}

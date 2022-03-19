@@ -1,0 +1,49 @@
+//fonts
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,700&display=swap");
+
+$lato: "Lato", sans-serif;
+
+$headerHeight: 96px;
+
+$headerColor: #181818;
+$bodyColor: #262626;
+
+$white: #ffffff;
+$color: #ffc11d;
+$greyColor: darkslategrey;
+
+$borderRadius: 4px;
+
+// breakpoints
+@mixin breakpoint($point) {
+  @if $point == xl {
+    // 1120px
+    @media (min-width: 70em) {
+      @content;
+    }
+  } @else if $point == lg {
+    // 1024px
+    @media (min-width: 64em) {
+      @content;
+    }
+  } @else if $point == md {
+    // 768px
+    @media (min-width: 48em) {
+      @content;
+    }
+  } @else if $point == md-only {
+    // 767px
+    @media (max-width: 767px) {
+      @content;
+    }
+  } @else if $point == sm {
+    // 600px
+    @media (min-width: 37.5em) {
+      @content;
+    }
+  } @else if $point == sm-only {
+    @media (max-width: 599px) {
+      @content;
+    }
+  }
+}

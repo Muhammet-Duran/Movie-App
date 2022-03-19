@@ -1,0 +1,13 @@
+@import "./../../styles/variables.scss";
+.movie__btn {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  padding: 6px 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  // color: $color;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 700;
+}
