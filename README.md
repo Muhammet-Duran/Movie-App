@@ -11,7 +11,7 @@
 - Reactjs
 - Context Api 
 - React-router
-- Sasss
+- Sass
 ## Development
 
 
