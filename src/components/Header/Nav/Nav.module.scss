@@ -12,11 +12,17 @@
     display: flex;
     align-items: center;
     transition: all 0.3s linear;
+    @include breakpoint(sm-only) {
+      font-size: 0.9rem;
+      color: $color;
+    }
     &:last-child {
       margin-left: 24px;
     }
-    &:hover {
-      color: $color;
+    @include breakpoint(lg) {
+      &:hover {
+        color: $color;
+      }
     }
   }
 }

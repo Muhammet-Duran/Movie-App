@@ -5,10 +5,12 @@ import Logo from "../..//UI/Logo/Logo";
 
 const Header = () => {
   return (
-    <header className={styles.header}>
-      <Logo />
-      <Nav />
-    </header>
+    <div className={styles.header}>
+      <header className={styles.header__container}>
+        <Logo />
+        <Nav />
+      </header>
+    </div>
   );
 };
 

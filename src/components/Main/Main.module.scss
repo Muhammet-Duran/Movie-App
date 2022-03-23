@@ -1,15 +1,17 @@
 @import "./../../styles/variables.scss";
 
 .main__area {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 40px 0px;
+  max-width: 1220px;
+  margin: 96px auto 0;
+  padding: 40px;
   &__not_content {
     // color: $white;
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 400;
-    color: crimson;
+    font-style: italic;
+    color: $color;
+    letter-spacing: 1px;
   }
 
   // @media screen and (max-width:991px){
