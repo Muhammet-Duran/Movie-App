@@ -5,7 +5,7 @@ $lato: "Lato", sans-serif;
 
 $headerHeight: 96px;
 
-$headerColor: #181818;
+$headerColor: #181818cc;
 $bodyColor: #262626;
 
 $white: #ffffff;
@@ -16,33 +16,16 @@ $borderRadius: 4px;
 
 // breakpoints
 @mixin breakpoint($point) {
-  @if $point == xl {
-    // 1120px
-    @media (min-width: 70em) {
-      @content;
-    }
-  } @else if $point == lg {
-    // 1024px
-    @media (min-width: 64em) {
-      @content;
-    }
-  } @else if $point == md {
-    // 768px
-    @media (min-width: 48em) {
+  @if $point == lg {
+    @media (min-width: 992px) {
       @content;
     }
   } @else if $point == md-only {
-    // 767px
-    @media (max-width: 767px) {
-      @content;
-    }
-  } @else if $point == sm {
-    // 600px
-    @media (min-width: 37.5em) {
+    @media (max-width: 991px) {
       @content;
     }
   } @else if $point == sm-only {
-    @media (max-width: 599px) {
+    @media (max-width: 576px) {
       @content;
     }
   }

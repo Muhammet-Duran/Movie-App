@@ -1,10 +1,22 @@
 @import "./../../styles/variables.scss";
 .header {
-  height: $headerHeight;
   background-color: $headerColor;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 48px;
-  padding-right: 48px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  &__container {
+    height: $headerHeight;
+    max-width: 1360px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }

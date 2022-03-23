@@ -8,8 +8,6 @@ import NotFound from "../NotFound/NotFound";
 const Main = () => {
   const { movies, isLoading } = useMovieContext();
 
-  console.log(movies);
-
   return (
     <div className={styles.main__area}>
       <SearchBar />
