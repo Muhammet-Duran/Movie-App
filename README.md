@@ -1,28 +1,26 @@
-# Movie App - [Demo](https://movie-redux-toolkit-app.vercel.app/)
-![Screen Shot 2023-03-14 at 08 16 07](https://user-images.githubusercontent.com/76096635/224903034-91050cc9-8ca0-4f41-9c49-c6193ec45b25.png)
 
+# Movie App - [Demo](https://movie-app-muhammet-duran.vercel.app/)
+
+![WhatsApp Image 2022-03-19 at 17 35 28 (1)](https://user-images.githubusercontent.com/76096635/159125576-81d11349-29c9-4cb0-9068-c3ef01219648.jpeg)
 <br>
 <br>
-![Screen Shot 2023-03-14 at 08 16 26](https://user-images.githubusercontent.com/76096635/224904391-7e6a4d03-fed8-427c-86cf-e5b178fd4f9f.png)
-
-
+![WhatsApp Image 2022-03-19 at 17 36 16 (1)](https://user-images.githubusercontent.com/76096635/159125808-3e448ce6-c292-4771-86af-daea02ba0c0b.jpeg)
 
 <br>
 
 ## 💻 Tech-Stack
 
 - Reactjs
-- Redux-Toolkit
-- Redux-Toolkit Query
+- Context Api
 - React-router
-- Framer-Motion
+- Sass
 
 ## Development
 
-To install and work on `https://github.com/Muhammet-Duran/movie-redux-toolkit`
+To install and work on `https://github.com/Muhammet-Duran/Movie-App`
 
 ```bash
-git clone https://github.com/Muhammet-Duran/movie-redux-toolkit.git
+git clone https://github.com/Muhammet-Duran/Movie-App
 cd movie-app
 npm install or yarn install
 ```
